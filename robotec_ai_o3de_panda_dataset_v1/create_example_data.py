@@ -14,10 +14,7 @@ def create_fake_episode(path):
     for step in range(EPISODE_LENGTH):
         episode.append(
             {
-                "image": np.asarray(np.random.rand(64, 64, 3) * 255, dtype=np.uint8),
-                "wrist_image": np.asarray(
-                    np.random.rand(64, 64, 3) * 255, dtype=np.uint8
-                ),
+                "image": np.asarray(np.random.rand(640, 480, 3) * 255, dtype=np.uint8),
                 "state": np.asarray(np.random.rand(10), dtype=np.float32),
                 "action": np.asarray(np.random.rand(10), dtype=np.float32),
                 "language_instruction": "dummy instruction",

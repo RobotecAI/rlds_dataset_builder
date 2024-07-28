@@ -2,13 +2,13 @@ import argparse
 import importlib
 import os
 
-import tqdm
-
-os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"  # suppress debug warning messages
 import matplotlib.pyplot as plt
 import numpy as np
 import tensorflow_datasets as tfds
+import tqdm
 import wandb
+
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"  # suppress debug warning messages
 
 WANDB_ENTITY = None
 WANDB_PROJECT = "vis_rlds"
