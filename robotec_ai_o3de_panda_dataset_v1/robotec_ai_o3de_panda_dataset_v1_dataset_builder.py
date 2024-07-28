@@ -6,8 +6,8 @@ import tensorflow_datasets as tfds
 import tensorflow_hub as hub
 
 
-class ExampleDataset(tfds.core.GeneratorBasedBuilder):
-    """DatasetBuilder for example dataset."""
+class RobotecO3dePandaDataset(tfds.core.GeneratorBasedBuilder):
+    """DatasetBuilder for Robotec AI O3DE Panda dataset."""
 
     VERSION = tfds.core.Version("1.0.0")
     RELEASE_NOTES = {
