@@ -30,20 +30,20 @@ class RobotecO3dePandaDataset(tfds.core.GeneratorBasedBuilder):
                             "observation": tfds.features.FeaturesDict(
                                 {
                                     "image": tfds.features.Image(
-                                        shape=(640, 480, 3),
+                                        shape=(480, 640, 3),
                                         dtype=np.uint8,
                                         encoding_format="png",
                                         doc="Main camera RGB observation.",
                                     ),
                                     "state": tfds.features.Tensor(
-                                        shape=(10,),
+                                        shape=(7,),
                                         dtype=np.float32,
                                         doc="Robot state, consists of [3x position, 3x orientation, 1x gripper state].",
                                     ),
                                 }
                             ),
                             "action": tfds.features.Tensor(
-                                shape=(10,),
+                                shape=(7,),
                                 dtype=np.float32,
                                 doc="Robot action, consists of [linear velocity (3x), angular velocity (3x), gripper state]. state d/dt",
                             ),
