@@ -6,7 +6,7 @@ import json
 import tqdm
 import random
 
-DATASET_PATH = "/robo-srv-004-storage-001/home/mkotynia/openvla_dataset/dataset8"
+DATASET_PATH = "/robo-srv-004-storage-001/home/mkotynia/openvla_dataset/dataset9"
 OUTPUT_PATH = "data"
 TRAIN_SPLIT_PATH = os.path.join(OUTPUT_PATH, "train")
 VAL_SPLIT_PATH = os.path.join(OUTPUT_PATH, "val")
